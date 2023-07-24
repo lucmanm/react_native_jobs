@@ -18,7 +18,6 @@ const Popularjobs = () => {
         query: "React Developer",
         num_pages: 1,
     });
-
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -29,12 +28,12 @@ const Popularjobs = () => {
             </View>
             <View style={styles.cardsContainer}>
                 {isLoading ? (
-                    <ActivityIndicator size={`large`} colors={COLORS.primary} />
+                    <ActivityIndicator size="large" colors={COLORS.primary} />
                 ) : error ? (
                     <Text>Something went Wrong</Text>
                 ) : (
                     <FlatList
-                        data={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
+                        data={[1, 2, 3, 4, 5, 6, 7, 8]}
                         renderItem={({ item }) => (
                             <PopularJobCard item={item} />
                         )}
