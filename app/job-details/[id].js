@@ -39,14 +39,14 @@ const JobDetails = () => {
                     headerBackVisible: false,
                     headerLeft: () => (
                         <ScreenHeaderBtn
-                            iconsUrl={icons.left}
+                            iconUrl={icons.left}
                             dimension="60%"
                             handlePress={() => router.back()}
                         />
                     ),
                     headerRight: () => (
                         <ScreenHeaderBtn
-                            iconsUrl={icons.share}
+                            iconUrl={icons.share}
                             dimension="60%"
                         />
                     ),
@@ -76,7 +76,7 @@ const JobDetails = () => {
                                 paddingBottom: 100,
                             }}>
                             <Company
-                                comapanyLogo={data[0].employer_logo}
+                                companyLogo={data[0].employer_logo}
                                 jobTitle={data[0].jobTitle}
                                 companyName={data[0].employer_name}
                                 location={data[0].job_country}
