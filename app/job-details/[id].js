@@ -77,7 +77,7 @@ const JobDetails = () => {
                             }}>
                             <Company
                                 companyLogo={data[0].employer_logo}
-                                jobTitle={data[0].jobTitle}
+                                jobTitle={data[0].job_title}
                                 companyName={data[0].employer_name}
                                 location={data[0].job_country}
                             />
